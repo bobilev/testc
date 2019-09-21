@@ -9,6 +9,7 @@
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-es2015": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.0.0",
+    "@vkontakte/vk-qr": "^2.0.8",
     "autoprefixer": "^9.6.1",
     "babel-loader": "^8.0.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -40,11 +41,12 @@
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-hot-loader": "^4.11.1"
+    "react-hot-loader": "^4.11.1",
+    "vk-qr": "^1.0.0"
   },
   "scripts": {
-    "wds": "webpack-dev-server --env.NODE_ENV=development --config webpack.config.js --progress --inline --hot --mode=development --reset-cache --host 0.0.0.0",
+    "wds": "webpack-dev-server --env.NODE_ENV=development --config webpack.config.js --progress --inline --hot --mode=development --reset-cache --host 0.0.0.0 --https",
     "build": "webpack --env.NODE_ENV=production --config webpack.config.js --progress --mode=production",
-    "deploy" : "gh-pages -d dist/"
+    "deploy": "gh-pages -d dist/"
   }
 }
