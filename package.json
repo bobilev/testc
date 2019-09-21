@@ -46,6 +46,6 @@
     "wds": "webpack-dev-server --env.NODE_ENV=development --config webpack.config.js --progress --inline --hot --mode=development --reset-cache --host 0.0.0.0",
     "build": "webpack --env.NODE_ENV=production --config webpack.config.js --progress --mode=production",
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d build"
+    "deploy" : "gh-pages -d dist"
   }
 }
