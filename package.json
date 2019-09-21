@@ -1,6 +1,7 @@
 {
   "name": "test",
   "license": "MIT",
+  "homepage": "./",
   "devDependencies": {
     "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.0",
@@ -36,12 +37,15 @@
     "babel-preset-react-hmre": "^1.1.1",
     "eslint": "^5.12.1",
     "eslint-loader": "^2.1.1",
+    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-hot-loader": "^4.11.1"
   },
   "scripts": {
     "wds": "webpack-dev-server --env.NODE_ENV=development --config webpack.config.js --progress --inline --hot --mode=development --reset-cache --host 0.0.0.0",
-    "build": "webpack --env.NODE_ENV=production --config webpack.config.js --progress --mode=production"
+    "build": "webpack --env.NODE_ENV=production --config webpack.config.js --progress --mode=production",
+    "predeploy": "npm run build",
+    "deploy" : "gh-pages -d build"
   }
 }
