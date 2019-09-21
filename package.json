@@ -1,7 +1,7 @@
 {
   "name": "test",
   "license": "MIT",
-  "homepage": "./dist",
+  "homepage": "https://bobilev.github.io/testc",
   "devDependencies": {
     "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.0",
@@ -45,7 +45,6 @@
   "scripts": {
     "wds": "webpack-dev-server --env.NODE_ENV=development --config webpack.config.js --progress --inline --hot --mode=development --reset-cache --host 0.0.0.0",
     "build": "webpack --env.NODE_ENV=production --config webpack.config.js --progress --mode=production",
-    "predeploy": "npm run build",
     "deploy" : "gh-pages -d dist"
   }
 }
